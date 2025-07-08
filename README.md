@@ -14,12 +14,14 @@ This repository is a template for hardware modules using KiCad, designed for cle
 
 ## Repository Structure
 
+```
 HW-Module-Template/
 ├── Hardware/              # KiCad project files
 ├── Doc/                   # Documentation exports
 ├── .github/workflows/     # CI/CD pipeline scripts
 ├── LICENSE
 └── README.md
+```
 
 ## Usage
 1. Click “Use this template” on GitHub.
@@ -34,14 +36,14 @@ This project is licensed under CERN-OHL-S.
 
 ## Badges
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OE5XRX/<your-repo>/kicad-ci.yml?branch=main)
-![GitHub Release](https://img.shields.io/github/v/release/OE5XRX/<your-repo>)
-![License: CERN-OHL-S](https://img.shields.io/badge/license-CERN--OHL--S-blue)
-![KiCad Supported](https://img.shields.io/badge/KiCad-supported-blue)
-![Project Type](https://img.shields.io/badge/type-hardware-red)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OE5XRX/<your-repo>/kicad-ci.yml?branch=main)<br>
+![GitHub Release](https://img.shields.io/github/v/release/OE5XRX/<your-repo>)<br>
+![License: CERN-OHL-S](https://img.shields.io/badge/license-CERN--OHL--S-blue)<br>
+![KiCad Supported](https://img.shields.io/badge/KiCad-supported-blue)<br>
+![Project Type](https://img.shields.io/badge/type-hardware-red)<br>
 
 ## Contact
 
-OE5XRX Amateur Radio Club
-🌐 https://oe5xrx.org
-✉️ info@oe5xrx.org
+OE5XRX Amateur Radio Club<br>
+🌐 https://oe5xrx.org<br>
+✉️ info@oe5xrx.org<br>
