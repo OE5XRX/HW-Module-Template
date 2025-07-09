@@ -17,8 +17,11 @@ This repository is a template for hardware modules using KiCad, designed for cle
 ```
 HW-Module-Template/
 ├── .github/workflows/     # CI/CD pipeline scripts
-├── hardware/              # KiCad project files
 ├── doc/                   # Documentation exports
+├── hardware/              # KiCad project files
+│   ├── symbols/           # Local symbol library (if needed)
+│   ├── footprints/        # Local footprint library (if needed)
+│   ├── 3d-models/         # STEP/WRL files (optional)
 ├── LICENSE
 └── README.md
 ```
