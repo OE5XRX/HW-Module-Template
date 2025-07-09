@@ -33,17 +33,6 @@ fp-lib-table
 *.cache
 *.tmp
 
-# Simulation files
-*.cir
-*.spice
-*.raw
-*.log
-*.plt
-
-# 3D rendering files
-*.wrl
-*.step
-
 # OS-specific files
 .DS_Store
 Thumbs.db
