@@ -16,9 +16,9 @@ This repository is a template for hardware modules using KiCad, designed for cle
 
 ```
 HW-Module-Template/
-├── Hardware/              # KiCad project files
-├── Doc/                   # Documentation exports
 ├── .github/workflows/     # CI/CD pipeline scripts
+├── hardware/              # KiCad project files
+├── doc/                   # Documentation exports
 ├── LICENSE
 └── README.md
 ```
@@ -32,13 +32,13 @@ HW-Module-Template/
 
 ## License
 
-This project is licensed under CERN-OHL-S.
+This project is licensed under [CERN-OHL-S-2.0](https://choosealicense.com/licenses/cern-ohl-s-2.0/).
 
 ## Badges
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OE5XRX/<your-repo>/kicad-ci.yml?branch=main)<br>
 ![GitHub Release](https://img.shields.io/github/v/release/OE5XRX/<your-repo>)<br>
-![License: CERN-OHL-S](https://img.shields.io/badge/license-CERN--OHL--S-blue)<br>
+![License: CERN-OHL-S](https://img.shields.io/badge/license-CERN--OHL--S--2.0-blue)<br>
 ![KiCad Supported](https://img.shields.io/badge/KiCad-supported-blue)<br>
 ![Project Type](https://img.shields.io/badge/type-hardware-red)<br>
 
