@@ -4,9 +4,6 @@ on:
   pull_request:
     branches:
       - 'main'
-    paths:
-      - 'hardware/**'
-
 
 jobs:
   kibot_check:
@@ -22,5 +19,5 @@ jobs:
       with:
         config: test.kibot.yaml
         dir: output
-        schema: 'hardware/*.kicad_sch'
+        schema: main.kicad_sch
         verbose: 0
