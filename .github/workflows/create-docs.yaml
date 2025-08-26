@@ -18,7 +18,7 @@ jobs:
         run: |
           export COMMIT=$(git rev-parse --short HEAD)
           echo "COMMIT = ${COMMIT}"
-          sed -i "s/<<HASH>>/BETA-${COMMIT}/g" hardware/*
+          sed -i "s/<<HASH>>/BETA-${COMMIT}/g" *.kicad_*
 
       - name: Generate Export Files
         uses: INTI-CMNB/KiBot@v2_k9
