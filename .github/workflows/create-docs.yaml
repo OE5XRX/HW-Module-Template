@@ -23,7 +23,7 @@ jobs:
       - name: Generate Export Files
         uses: INTI-CMNB/KiBot@v2_k9
         with:
-          config: output.kibot.yaml
+          config: production.kibot.yaml
           dir: output
           schema: main.kicad_sch
           board: main.kicad_pcb
