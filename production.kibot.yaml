@@ -30,7 +30,7 @@ outputs:
         title: 'Bill of Materials'
         lcsc_link: 'LCSC'
         mouser_link: 'MOUSER'
-        logo: 'https://oe5xrx.org/Icon.png'
+        logo: 'doc/Icon.png'
 
   - name: SchematicPDF
     comment: "Print schematic PDF"
