@@ -32,9 +32,11 @@ HW-Module-Template/
 ## Usage
 1. Click “Use this template” on GitHub.
 2. Clone your repository locally and open in KiCad.
-3. Work on your schematic and PCB as usual.
-4. Push your changes.
-5. CI/CD will automatically generate production files and attach them to the latest GitHub Release.
+3. fix the missing names in the readme and add documentation in the `doc/index.md` file.
+4. Work on your schematic and PCB as usual (create a new project (main-file must be called `main.kicad_*`) or copy a new one into the folder structure).
+5. Push your changes.
+6. CI/CD will automatically generate production files.
+7. If there is a release defined, CI/CD will create a documentation on the main webpage.
 
 ## License
 
