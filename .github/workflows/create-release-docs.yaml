@@ -1,4 +1,4 @@
-name: Create Production Data For Beta No-Release Version
+name: Create Production Data For Release Version
 on:
   workflow_dispatch:
   release:
