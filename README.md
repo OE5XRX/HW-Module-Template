@@ -44,7 +44,7 @@ This project is licensed under [CERN-OHL-S-2.0](https://choosealicense.com/licen
 
 ## Badges
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OE5XRX/<your-repo>/kicad-ci.yml?branch=main)<br>
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OE5XRX/<your-repo>/kibot-check.yaml?branch=main)<br>
 ![GitHub Release](https://img.shields.io/github/v/release/OE5XRX/<your-repo>)<br>
 ![License: CERN-OHL-S](https://img.shields.io/badge/license-CERN--OHL--S--2.0-blue)<br>
 ![KiCad Supported](https://img.shields.io/badge/KiCad-supported-blue)<br>
