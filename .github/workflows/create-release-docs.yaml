@@ -49,9 +49,9 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          token: ${{ secrets.DEPLOY_GH_TOKEN }}
-          repository-name: OE5XRX/OE5XRX.github.io
-          branch: main
-          folder: output
-          target_folder: docs/remote-station/hardware/${{ github.event.repository.name }}
-          clean: true
+          TOKEN: ${{ secrets.DEPLOY_GH_TOKEN }}
+          REPOSITORY-NAME: OE5XRX/OE5XRX.github.io
+          BRANCH: main
+          FOLDER: output
+          TARGET_FOLDER: docs/remote-station/hardware/${{ github.event.repository.name }}
+          CLEAN: true
