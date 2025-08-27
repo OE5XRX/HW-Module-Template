@@ -47,11 +47,11 @@ jobs:
 #          python3 scripts/bom-export.py --csv_file output/*-bom.csv --name "${{ github.event.repository.name }}" --version "${{ github.ref_name }}" --pcb_image output/*-3D_top-without.png --assembly_image output/*-3D_top-with.png
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4
         with:
-          TOKEN: ${{ secrets.DEPLOY_GH_TOKEN }}
-          REPOSITORY-NAME: OE5XRX/OE5XRX.github.io
-          BRANCH: main
-          FOLDER: output
-          TARGET_FOLDER: docs/remote-station/hardware/${{ github.event.repository.name }}
-          CLEAN: true
+          token: ${{ secrets.DEPLOY_GH_TOKEN }}
+          repository-name: OE5XRX/OE5XRX.github.io
+          branch: main
+          folder: output
+          target-folder: docs/remote-station/hardware/${{ github.event.repository.name }}
+          clean: true
