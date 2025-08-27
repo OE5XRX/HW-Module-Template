@@ -29,7 +29,7 @@ jobs:
           verbose: 0
 
       - name: copy doc files to output folder
-        run: cp doc/* output/
+        run: sudo cp doc/* output/
 
       - name: Upload Export Files as Artifacts
         uses: actions/upload-artifact@v4
