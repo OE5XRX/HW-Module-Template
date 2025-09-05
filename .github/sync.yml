@@ -1,6 +1,10 @@
 group:
   repos: |
+    OE5XRX/HW-Module-DeviceTester
+    OE5XRX/HW-Module-BusBoard
+    OE5XRX/HW-Module-PowerBoard
     OE5XRX/HW-Module-CM4Carrier
+    OE5XRX/HW-Module-FMTransceiver
   files:
     # general files
     - .gitignore
