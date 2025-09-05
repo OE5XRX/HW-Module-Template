@@ -1,7 +1,6 @@
 group:
   repos: |
-    user/repo
-    user/repo1
+    OE5XRX/HW-Module-CM4Carrier
   files:
     # general files
     - .gitignore
