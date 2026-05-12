@@ -1,57 +1,41 @@
 # HW-Module-Template
 
-## Description
+GitHub "Use this template" scaffold for new hardware module repositories under OE5XRX. New modules cloned from this template start pre-wired to the shared CI infrastructure at [`OE5XRX/HW-Module-CI`](https://github.com/OE5XRX/HW-Module-CI).
 
-This repository is a template for hardware modules using KiCad, designed for clean, maintainable development with CI/CD pipelines generating and publishing production data automatically.
+## Quickstart for new modules
 
-## Features
-* Structured KiCad project (schematic, PCB)
-* Clean repository: no production data stored
-* GitHub Actions CI/CD pipeline:
-  * Generates Gerber, BOM, and assembly files
-  * Uploads artifacts to GitHub Releases
-* Open Hardware license ready (CERN-OHL-S)
+1. Click **"Use this template"** on GitHub to create a new module repo (e.g., `HW-Module-Acme`).
+2. Clone the new repo locally.
+3. Replace `LICENSE` if your license differs from CERN-OHL-S 2.0.
+4. Create your KiCad project at the repo root. The `.kicad_pro`, `.kicad_sch`, and `.kicad_pcb` can be named anything — the shared CI auto-detects the basename. Convention: name them after the module (e.g., `Acme.kicad_pro`).
+5. Fill in `doc/index.md`:
+   - Replace `<NAME>` with the module's display name (e.g., `Acme`).
+   - Update `nav_order` to position it correctly on the hardware overview page.
+   - Replace `Some Text` with the module description, voltage tables, etc.
+   - Output paths already use `{{ site.data.project.name }}` — leave those as-is; CI fills in the auto-detected KiCad basename at build time.
+6. Commit and push. On the first push to `main`, CI auto-runs:
+   - `KiBot Check` — ERC + DRC preflight
+   - `Create Debug Docs` — publishes preview to the repo's `gh-pages` branch
+7. On the first GitHub release: `Create Release Docs` deploys versioned docs to `OE5XRX.github.io` and pushes BOM to InvenTree.
 
-## Repository Structure
+## What this template provides
 
-```
-HW-Module-Template/
-├── .github/workflows/     # CI/CD pipeline scripts
-├── doc/                   # Documentation exports
-├── symbols/               # Local symbol library (if needed)
-├── footprints/            # Local footprint library (if needed)
-├── 3d-models/             # STEP/WRL files (optional)
-├── main.kicad_pro         # KiCad main project file
-├── main.kicad_sch         # KiCad main schematic file
-├── main.kicad_pcb         # KiCad main pcb file
-├── *.kicad_sch            # other KiCad schematic files
-├── LICENSE
-└── README.md
-```
+- `.github/workflows/` — 3 thin wrappers that `uses: HW-Module-CI@main`
+- `doc/index.md` — Jekyll page scaffold (replace `<NAME>` + content)
+- `3d-models/`, `symbols/`, `footprints/` — empty subdirs for optional KiCad libraries
+- `LICENSE` — CERN-OHL-S 2.0
+- `README.md` — this file (overwrite for your module)
 
-## Usage
-1. Click “Use this template” on GitHub.
-2. Clone your repository locally and open in KiCad.
-3. fix the missing names in the readme and add documentation in the `doc/index.md` file.
-4. Work on your schematic and PCB as usual (create a new project (main-file must be called `main.kicad_*`) or copy a new one into the folder structure).
-5. Push your changes.
-6. CI/CD will automatically generate production files.
-7. If there is a release defined, CI/CD will create a documentation on the main webpage.
+## What's intentionally NOT in this template
+
+KiBot configs, Python scripts (BOM export, InvenTree sync, stencil PNG), Jekyll config, Gemfile, doc assets (favicon, logo) — all of these live in [`OE5XRX/HW-Module-CI`](https://github.com/OE5XRX/HW-Module-CI) and are pulled in at CI-runtime. Do not copy them here.
 
 ## License
 
-This project is licensed under [CERN-OHL-S-2.0](https://choosealicense.com/licenses/cern-ohl-s-2.0/).
-
-## Badges
-
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/OE5XRX/<your-repo>/kibot-check.yaml?branch=main)<br>
-![GitHub Release](https://img.shields.io/github/v/release/OE5XRX/<your-repo>)<br>
-![License: CERN-OHL-S](https://img.shields.io/badge/license-CERN--OHL--S--2.0-blue)<br>
-![KiCad Supported](https://img.shields.io/badge/KiCad-supported-blue)<br>
-![Project Type](https://img.shields.io/badge/type-hardware-red)<br>
+[CERN-OHL-S-2.0](https://choosealicense.com/licenses/cern-ohl-s-2.0/) by default; replace `LICENSE` if your module needs a different license.
 
 ## Contact
 
-OE5XRX Amateur Radio Club<br>
-🌐 https://oe5xrx.org<br>
-✉️ info@oe5xrx.org<br>
+OE5XRX Amateur Radio Club  
+🌐 https://oe5xrx.org  
+✉️ info@oe5xrx.org
